@@ -1,10 +1,8 @@
 TARGET=piksi_system_daemon
 SOURCES= \
-	main.c \
-	sbp_zmq.c \
-	settings.c \
+	main.c
 
-LIBS=-lczmq -lsbp
+LIBS=-lczmq -lsbp -lsbp_zmq -lsbp_settings
 CFLAGS=-std=gnu11
 
 CROSS=
